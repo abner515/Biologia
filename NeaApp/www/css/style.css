@@ -16,175 +16,28 @@ ion-content{
 }
 
 
+.info{
+  height: 150%;
+  width: 100%;
+}
+
+.espacio{
+  height: 80% !important;
+  margin-top: 20% !important;
+  padding: 3%;
+  margin:0;
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 
 
-   /* WebKit and Opera browsers */
-
-
-
-   @-webkit-keyframes spinner {
-     from {
-       -webkit-transform: rotateY(0deg);
-     }
-     to {
-       -webkit-transform: rotateY(-360deg);
-     }
-   }
-
-   /* all other browsers */
-
-   @keyframes spinner {
-     from {
-       -moz-transform: rotateY(0deg);
-       -ms-transform: rotateY(0deg);
-       transform: rotateY(0deg);
-     }
-     to {
-       -moz-transform: rotateY(-360deg);
-       -ms-transform: rotateY(-360deg);
-       transform: rotateY(-360deg);
-     }
-   }
-
-   #stage {
-     margin: 1em auto;
-     -webkit-perspective: 1400px;
-     -moz-perspective: 1400px;
-     -ms-perspective: 1400px;
-     perspective: 1400px;
-     
-     /* Safari */
-  -webkit-transform: rotate(-90deg);
-
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-
-  /* IE */
-  -ms-transform: rotate(-90deg);
-
-  /* Opera */
-  -o-transform: rotate(-90deg);
-   }
-
-   #spinner *{
-     -webkit-animation-name: spinner;
-     -webkit-animation-timing-function: linear;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-duration: 6s;
-     animation-name: spinner;
-     
-     animation-timing-function: linear;
-     animation-iteration-count: infinite;
-     animation-duration: 6s;
-     -webkit-transform-style: preserve-3d;
-     -moz-transform-style: preserve-3d;
-     -ms-transform-style: preserve-3d;
-     transform-style: preserve-3d;
-   }
-
-  #spinner *:nth-child(1) { 
-    animation-delay: -1.9s;
-  }
-
-  #spinner *:nth-child(2) { 
-    animation-delay: -2s;
-  }
-
-  #spinner *:nth-child(3) { 
-    animation-delay: -2.3s;
-  }
-
-  #spinner *:nth-child(4) { 
-    animation-delay: -2.4s;
-  }
-
-  #spinner *:nth-child(5) { 
-    animation-delay: -2.6s;
-  }
-
-  #spinner *:nth-child(6) { 
-    animation-delay: -2.8s;
-  }
-
-  #spinner *:nth-child(7) { 
-    animation-delay: -3.0s;
-  }
-
-  #spinner *:nth-child(8) { 
-    animation-delay: -3.2s;
-  }
-
-  #spinner *:nth-child(9) { 
-    animation-delay: -3.4s;
-  }
-
-   #spinner:hover {
-     -webkit-animation-play-state: paused;
-     animation-play-state: paused;
-   }
-
-  span.grey {
-    background: #cccccc;
-    border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    color: #fff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-right: 15px;
-    text-align: center;
-    width: 1.6em; 
-  }
-
-  span.green {
-    background: #5EA226;
-    border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    color: #ffffff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-right: 15px;
-    text-align: center;
-    width: 1.6em; 
-  }
-
-  span.blue {
-    background: #5178D0;
-    border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    color: #ffffff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-right: 15px;
-    text-align: center;
-    width: 1.6em; 
-  }
-
-  span.pink {
-    background: #EF0BD8;
-    border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    color: #ffffff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-right: 15px;
-    text-align: center;
-    width: 1.6em; 
-  }
 
 
 
 
-/*Juego*/
+/* Juego */
 * {
   margin: 0;
   padding: 0;
@@ -200,20 +53,20 @@ body {
 .todo {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin:auto;
   margin-top: 10px;
-  position: relative;
+  position: auto;
 } 
 
 .titulo {
    font-size: 80px;
-   font-family: Lucida Console, Courier, monospace;
-   color: rgb(217, 103, 29);
+   font-family: arial black,  monospace;
+   color: rgb(200, 100, 10);
   
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin-top: 20px;
 }
@@ -235,11 +88,10 @@ img {
 .carta {
   width: 14%;
   margin: 1% 1%;
-  height: 150px;
+  height: 60px;
   border-radius: 8px;
   float: left;
   cursor: pointer;
-  
   
 }
 
@@ -255,8 +107,8 @@ img {
 
 .frente {
   background: #FFCF7F top center;
-  width: 100%;
   height: 100%;
+  width: 100%;
   border-radius: 8px;
   z-index: 2;
   transform: rotateY(0deg);
@@ -283,6 +135,8 @@ img {
 }
 
 .atras {
+  height: 100%;
+  width: 100%;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -319,9 +173,9 @@ p.counter {
   cursor: pointer;
 }
 
-p{
-  font-family: arial black;
+.titulo{
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  font-family: cursive arial; 
 }
-
-
-
