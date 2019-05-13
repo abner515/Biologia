@@ -7,7 +7,7 @@ h2{
 	color: black;
 }
 ion-content{
-	background:#1A94A9;
+	background:#FB984C;
 }
 
 .img1{
@@ -19,6 +19,7 @@ ion-content{
 .info{
   height: 150%;
   width: 100%;
+
 }
 
 .espacio{
@@ -30,7 +31,10 @@ ion-content{
   justify-content: flex-end;
 }
 
-
+.title{
+  font-family: arial black;
+  color:red;
+}
 
 
 
