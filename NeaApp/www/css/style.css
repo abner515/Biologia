@@ -6,9 +6,8 @@
 h2{
 	color: black;
 }
-ion-content{
-	background:#FB984C;
-}
+
+
 
 .img1{
 	width: 100%;
@@ -34,6 +33,16 @@ ion-content{
 .title{
   font-family: arial black;
   color:red;
+}
+
+.imginfo{
+  height: 100% !important;
+  width: 110% !important;
+
+}
+.letra{
+  font-size:100%;
+  font-family: "Trebuchet MS",Helvetica;
 }
 
 
