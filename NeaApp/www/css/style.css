@@ -1,6 +1,6 @@
 .vid{
 	width: 100%;
-	height: 500px;
+	height: 200px;
 }
 
 h2{
@@ -10,8 +10,9 @@ h2{
 
 
 .img1{
-	width: 100%;
-	height: 500px;
+  width: 100%;
+  height: 500px;
+
 }
 
 
@@ -32,7 +33,9 @@ h2{
 
 .title{
   font-family: arial black;
-  color:red;
+  color:#6AF4BC;
+  text-align: center;
+
 }
 
 .imginfo{
@@ -43,6 +46,20 @@ h2{
 .letra{
   font-size:100%;
   font-family: "Trebuchet MS",Helvetica;
+}
+
+ion-view{
+  background: url("http://wallpapers.org.es/wp-content/uploads/2012/09/degradado_de_color_1920x1200_126-1024x640.jpeg") no-repeat ;
+  background-size:cover;
+}
+.bien{
+  font-family: arial black;
+  color: #6AF4BC;
+  text-align: center;
+}
+.palabras{
+font-size: 17px;
+text-align: center; 
 }
 
 
